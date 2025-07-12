@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 if (process.env.NODE_ENV === "production") {
   app.use(cors({ origin: "http://localhost:5173" }));
 }
-app.use(express.json());
+app.use(express.json()); //allows us to accept json data in the req.body
 
 app.use(rateLimiter);
 
