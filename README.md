@@ -42,7 +42,8 @@ Take notes, edit them, delete them — all from a clean and responsive UI. Perfe
 3. Create a `bash.env` file with your MongoDB connection string and Redis URL:
    ```bash
    MONGO_URI=your_mongodb_connection_string
-   REDIS_URL=your_upstash_redis_url
+   UPSTASH_REDIS_REST_URL="your_upstash_redis_url"
+   UPSTASH_REDIS_REST_TOKEN="your_upstash_redis_rest_token"
    PORT=5000
    ```
 4. Start the backend server:
