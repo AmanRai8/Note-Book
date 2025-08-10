@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "dev": "npm run dev --prefix backend"
+    "dev": "npm run dev --prefix backend",
+    "vercel-build": "npm run build"
   },
   "keywords": [],
   "author": "",

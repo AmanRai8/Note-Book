@@ -27,14 +27,6 @@ app.use(rateLimiter);
 // Routes
 app.use("/api/notes", notesRoutes);
 
-// Serve frontend in production (optional, if you want API + frontend same domain)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "frontend/dist")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-  });
-}
-
 // Connect DB
 connectDB();
 
